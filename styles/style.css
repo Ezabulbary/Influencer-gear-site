@@ -95,9 +95,15 @@ body{
 .advertisement{
     width: 1110px;
     height: 110px;
+    border: 1px solid #eeeeee;
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+.all-ad{
+    margin: 40px 30px;
 }
 .ad-logo{
-    
+    width: 91px;
+    height: 38px;
 }
