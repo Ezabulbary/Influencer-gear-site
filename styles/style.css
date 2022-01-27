@@ -251,8 +251,8 @@ footer{
 }
 .footer-align{
     height: 139px;
-    text-align: center;
     padding: 50px;
+    text-align: center;
 }
 .footer-align h3{
     font-size: 24px;
@@ -261,8 +261,27 @@ footer{
 .footer-align p{
     font-size: 14px;
     line-height: 24px;
-    padding: 10px;
+    padding: 5px;
 }
 .social-icon .fab{
-    margin: 10px;
+    width: 35px;
+    height: 35px;
+    margin: 10px 5px 5px 5px;
+}
+
+/* media query */
+
+@media screen and (max-width:667px) {
+    .containar{
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media  and (min-width:668px) and (max-width:1023px) {
+    
+}
+
+@media screen and (min-width:1024px) {
+    
 }
