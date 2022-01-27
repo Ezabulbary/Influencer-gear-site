@@ -5,10 +5,11 @@
 }
 
 /* font  */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poppins:wght@400;500&display=swap');
 
 /* common style */
 body{
+    font-family: 'Open Sans Condensed', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
 .containar{
@@ -190,5 +191,52 @@ body{
     color: #e02c6dde;
 }
 
-/* contact section style */
+/* contacts section style */
 
+.contacts{
+    margin-top: 100px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.up{
+    margin-bottom: 30px;
+}
+.up h2{
+    font-size: 28px;
+    line-height: 50px;
+    font-weight: 600;
+    color: #3A3A3A;
+    text-align: center;
+}
+.up p{
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #3A3A3A;
+    text-align: center;
+}
+
+.down{
+    display: flex;
+    margin-bottom: 100px;
+}
+.left{
+    margin: auto;
+}
+.right{
+    margin: auto;
+}
+.send-massage{
+    display: flex;
+    flex-direction: column;
+}
+.send-massage input, textarea, button{
+    font-size: 20px;
+    margin: 8px;
+    padding: 8px 12px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+}
+.send-massage button{
+    background-color: #E02C6D;
+}
