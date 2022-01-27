@@ -36,6 +36,7 @@ body{
 /* top section style  */
 
 .top-section{
+    height: 600px;
     display: flex;
 }
 .top-detail{
@@ -89,3 +90,14 @@ body{
     z-index: 2;
 }
 
+/* advertisement style */
+
+.advertisement{
+    width: 1110px;
+    height: 110px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.ad-logo{
+    
+}
