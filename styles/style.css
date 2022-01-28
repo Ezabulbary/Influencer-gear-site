@@ -243,7 +243,7 @@ body{
 
 /* footer style */
 
-footer{
+.all-footer{
     background-color: #0A0826;
     width: 100%;
     height: 239px;
@@ -276,7 +276,7 @@ footer{
  ------------------*/
 
 
-@media screen and (max-width:667px) {
+@media only screen and (max-width:667px) {
     .nav-bar{
         flex-direction: column;
         justify-content: space-evenly;
@@ -310,13 +310,42 @@ footer{
     }
     .down{
         flex-direction: column-reverse;
+    } 
+    .footer-align{
+        width: 100%;
     }
 }
 
-@media  and (min-width:668px) and (max-width:1023px) {
-    
-}
-
-@media screen and (min-width:1024px) {
-    
+@media only screen and (min-width:668px) and (max-width:1023px) {
+    .nav-bar{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .top-section{
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+    }
+    .top-image{
+        margin: 10px auto;
+    }
+    .top-detail{
+        margin-top: 0;
+    }
+    .top-detail > h1, p, button {
+        margin: 10px auto;
+        text-align: center;
+    }
+    .advertisement{
+        width: 605px;
+        height: 225px;
+        flex-wrap: wrap;
+        margin: 0 auto 50px;
+    }
+    .popular-collection{
+        width: 670px;
+        height: 2650px;
+    }
+    .collections{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
