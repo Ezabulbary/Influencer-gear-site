@@ -97,19 +97,16 @@ body{
 /* advertisement style */
 
 .advertisement{
-    width: 1110px;
-    height: 110px;
     border: 1px solid #eeeeee;
     display: flex;
-    align-items: center;
+    justify-content: space-around;
     margin: 0 auto 100px;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
 }
 .all-ad{
     margin: 40px 30px;
-}
-.ad-logo{
-    width: 91px;
-    height: 38px;
 }
 
 /* Popular collection style */
@@ -274,32 +271,45 @@ footer{
     text-decoration: none;
 }
 
-/* media query */
+/*------------------
+ media query 
+ ------------------*/
+
 
 @media screen and (max-width:667px) {
     .nav-bar{
         flex-direction: column;
-        padding-top: 80px;
-    }
-    .menu{
-        display: none;
+        justify-content: space-evenly;
     }
     .top-section{
         flex-direction: column-reverse;
         margin-bottom: 50px;
     }
-    .top-detail, .top-image{
-        margin: auto;
+    .top-image{
+        margin: 10px auto;
+    }
+    .top-detail{
+        margin-top: 0;
+    }
+    .top-detail > h1, p, button {
+        margin: 10px auto;
+        text-align: center;
     }
     .advertisement{
-        flex-direction: column;
+        width: 605px;
+        height: 225px;
+        flex-wrap: wrap;
+        margin: 0 auto 50px;
     }
     .popular-collection{
-        width: 100%;
-        height: 1000px;
+        width: 350px;
+        height: 4700px;
     }
-    .collection{
-        grid-template-columns: repeat(1,1fr);
+    .collections{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .down{
+        flex-direction: column-reverse;
     }
 }
 
